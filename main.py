@@ -27,3 +27,16 @@ def Blocker():
             else:
                 host_file.write(ip_address + " " + website + '\n')
                 Label(root, text = "Blocked", font = 'arial 12 bold').place(x=230,y =200)
+                
+def Mass_Blocker():
+    website_lists = Websites.get(1.0,END)
+    Website = list(website_lists.split(","))
+    with open (host_path , 'r+') as host_file:
+        file_content = host_file.read()
+        for website in Website:
+            if website in file_content:
+                Label(root, text = 'Already Blocked' , font = 'arial 12 bold').place(x=200,y=200)
+                pass
+            else:
+                host_file.write(ip_address + " " + website + '\n')
+                Label(root, text = "Blocked", font = 'arial 12 bold').place(x=230,y =200)
