@@ -7,7 +7,7 @@ root.resizable(0,0)
 root.title("Spitfire1318's Website Blocker")
 
 Label(root, text ='WEBSITE BLOCKER' , font ='arial 20 bold').pack()
-Label(root, text ='TechVidvan' , font ='arial 20 bold').pack(side=BOTTOM)
+Label(root, text ='Spitfire1318' , font ='arial 20 bold').pack(side=BOTTOM)
 
 host_path ='C:\Windows\System32\drivers\etc\hosts'
 ip_address = '127.0.0.1'
